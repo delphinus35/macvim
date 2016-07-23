@@ -5153,6 +5153,7 @@ f_has(typval_T *argvars, typval_T *rettv)
 #ifdef FEAT_GETTEXT
 	"gettext",
 #endif
+	"guess_encode",
 #ifdef FEAT_GUI
 	"gui",
 #endif
@@ -5204,6 +5205,7 @@ f_has(typval_T *argvars, typval_T *rettv)
 #ifdef FEAT_JUMPLIST
 	"jumplist",
 #endif
+	"kaoriya",
 #ifdef FEAT_KEYMAP
 	"keymap",
 #endif
@@ -5232,6 +5234,11 @@ f_has(typval_T *argvars, typval_T *rettv)
 #endif
 #ifdef FEAT_MENU
 	"menu",
+#endif
+#ifdef USE_MIGEMO
+# ifndef DYNAMIC_MIGEMO
+	"migemo",
+# endif
 #endif
 #ifdef FEAT_SESSION
 	"mksession",
